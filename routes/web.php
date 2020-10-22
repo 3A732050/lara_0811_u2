@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-
+*/
 /*
 Route::get('/',function() {
     return redirect('r1');
@@ -41,6 +41,12 @@ Route::get('hello/{name?}',function($name='Everybody') {
     return 'Hello, ' . $name;
 });
 */
+/*
 Route::get('hello/{name?}', function ($name='Everybody') {
     return 'Hello, ' . $name;
 })->name('hello.index');
+*/
+Route::get('dashboard', function() {
+    return 'dashboard';
+});
+
